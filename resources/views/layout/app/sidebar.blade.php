@@ -17,12 +17,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{{ route('siswa.index') }}">
+            <a href="#">
               <i class="bi bi-circle"></i><span>List Daftar Siswa</span>
             </a>
           </li>
           <li>
-            <a href="{{ route('siswa.create') }}">
+            <a href="#">
               <i class="bi bi-circle"></i><span>Tambah Data Siswa</span>
             </a>
           </li>
@@ -37,12 +37,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="{{ route('guru.index') }}">
+            <a href="#">
               <i class="bi bi-circle"></i><span>List Daftar Guru</span>
             </a>
           </li>
           <li>
-            <a href="{{ route('guru.create') }}">
+            <a href="#">
               <i class="bi bi-circle"></i><span>Tambah Data Guru</span>
             </a>
           </li>
