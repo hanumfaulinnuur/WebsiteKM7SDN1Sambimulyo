@@ -17,12 +17,12 @@
         </a>
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="#">
+            <a href="{{ route('siswa.index') }}">
               <i class="bi bi-circle"></i><span>List Daftar Siswa</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="{{ route('siswa.create') }}">
               <i class="bi bi-circle"></i><span>Tambah Data Siswa</span>
             </a>
           </li>
