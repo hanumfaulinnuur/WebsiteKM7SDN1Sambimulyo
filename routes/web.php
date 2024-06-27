@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuruController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\SiswaController;
 
@@ -15,3 +16,5 @@ Route::post('/logout', [AdminController::class, 'logout']);
 
 //routing data siswa
 Route::resource('siswa', SiswaController::class);
+//routing data guru
+Route::resource('guru', GuruController::class);

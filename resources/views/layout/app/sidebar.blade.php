@@ -37,12 +37,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="#">
+            <a href="{{ route('guru.index') }}">
               <i class="bi bi-circle"></i><span>List Daftar Guru</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="{{ route('guru.create') }}">
               <i class="bi bi-circle"></i><span>Tambah Data Guru</span>
             </a>
           </li>
