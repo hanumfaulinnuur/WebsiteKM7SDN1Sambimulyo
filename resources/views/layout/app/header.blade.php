@@ -13,22 +13,29 @@
     <ul class="d-flex align-items-center">
       <li class="nav-item dropdown pe-3">
         <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-          <span class="d-none d-md-block dropdown-toggle ps-2">Hanum Faulinnuur</span>
+          <span class="d-none d-md-block dropdown-toggle ps-2">Hi, {{ Auth::user()->name }}</span>
         </a><!-- End Profile Iamge Icon -->
 
         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
           <li class="dropdown-header">
-            <h6>Hanum Faulinnuur</h6>
-            <span>Operator Sekolah</span>
+            <h6>{{ Auth::user()->name }}</h6>
+            <span>{{ Auth::user()->jabatan }}</span>
           </li>
           <li>
             <hr class="dropdown-divider">
           </li>
           <li>
-            <a class="dropdown-item d-flex align-items-center" href="#">
-              <i class="bi bi-box-arrow-right"></i>
-              <span>Keluar</span>
+            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <i class="bi bi-gear"></i>
+              <span>Pengaturan Akun</span>
             </a>
+          </li>
+          <li>
+            <form action="{{ url('/logout') }}" method="POST">
+              @csrf
+              <button type="submit" class="dropdown-item d-flex align-items-center"><i class="bi bi-box-arrow-right"></i>
+                <span>Keluar</span></button>
+            </form>   
           </li>
 
         </ul><!-- End Profile Dropdown Items -->

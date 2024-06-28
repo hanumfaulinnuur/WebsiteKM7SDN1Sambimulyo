@@ -23,8 +23,10 @@ class AdminController extends Controller
         if (Auth::attempt($credentials)) 
         {
             $request->session()->regenerate();
-            return view("welcome");
-        }        
+            return redirect()->intended('siswa');
+        }
+        return back()->withErrors('Login gagal, Periksa Inputan Anda!');
+        
     }
 
     public function logout(Request $request)
