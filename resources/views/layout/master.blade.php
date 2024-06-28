@@ -32,7 +32,7 @@
 
     <body>
 
-      
+      @if (Auth::check())
           <!-- =======  Header ======= -->
       @include('layout.app.header')
       <!-- =======End Header ======= -->
@@ -40,7 +40,7 @@
       <!-- =======   Sidebar ======= -->
       @include('layout.app.sidebar')
       <!-- ======= End Sidebar ======= -->
-
+      @endif
 
       <!-- ======= Content ======= -->
       @yield('content')

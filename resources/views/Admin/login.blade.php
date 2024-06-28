@@ -11,9 +11,17 @@
                         <div class="text-center mb-3">
                             <img src="{{ asset('assets/img/TWH.png') }}" class="img-fluid m-4" width="80px">
                             <h2>SDN 1 Sambimulyo</h2>
+                            @if(session('success'))
+                            <p class="alert alert-success">{{ session('success') }}</p>
+                            @endif
+                            @if($errors->any())
+                            @foreach($errors->all() as $err)
+                            <p class="alert alert-danger">{{ $err }}</p>
+                            @endforeach
+                            @endif
                         </div>
   
-                        <form method="POST" action="/proses-login" >
+                        <form method="POST" action={{ url('/proses-login') }} >
                             @csrf
                             <div class="col-12">
                               <label for="email" class="form-label">Email</label>
