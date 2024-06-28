@@ -15,6 +15,6 @@ Route::post('/proses-login', [AdminController::class, 'authenticate']);
 Route::post('/logout', [AdminController::class, 'logout']);
 
 //routing data siswa
-Route::resource('siswa', SiswaController::class);
+Route::resource('siswa', SiswaController::class)->middleware('auth');
 //routing data guru
-Route::resource('guru', GuruController::class);
+Route::resource('guru', GuruController::class)->middleware('auth');
