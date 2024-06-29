@@ -64,7 +64,7 @@
                 <div class="row">
                   <div class=" label">
                     <a class="btn btn-primary" href="{{ url('siswa') }}" role="button"><i class="bi bi-box-arrow-in-left"></i> Kembali</a>
-                    <a class="btn btn-danger" href="#" role="button"><i class="bi bi-printer"></i> Cetak</a>
+                    <a class="btn btn-danger" href="{{ url('/export-pdf', $siswa->id) }}" role="button"><i class="bi bi-printer"></i> Cetak PDF</a>
                   </div>
                 </div>
                 
