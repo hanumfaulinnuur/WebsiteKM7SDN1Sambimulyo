@@ -9,7 +9,7 @@
          <div class="alert alert-info mt-3">{{ Session('success') }}</div>
        @endif
           <h5 class="card-title">List Dewan Guru SDN 1 Sambimulyo</h5><hr>
-          <a class="btn btn-success mb-3" href="#" role="button"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Ekspor Excel</a>
+          <a class="btn btn-success mb-3" href="{{ url('/export-excel') }}" role="button"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Ekspor Excel</a>
           <table class="table table-striped table-bordered">
             <thead>
               <tr class="text-center">
