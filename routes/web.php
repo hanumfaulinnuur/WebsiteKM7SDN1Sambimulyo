@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PDFController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ExcelController;
 use App\Http\Controllers\SiswaController;
 
 // Route::get('/', function () {
@@ -22,3 +23,6 @@ Route::resource('guru', GuruController::class)->middleware('auth');
 
 //cetak pdf
 Route::get('/export-pdf/{id}', [PDFController::class, 'exportPDF']);
+
+//cetak excel
+Route::get('/export-excel', [ExcelController::class, 'exportExcel']);
