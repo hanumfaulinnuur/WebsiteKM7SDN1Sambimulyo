@@ -31,3 +31,5 @@ Route::get('/export-excel', [ExcelController::class, 'exportExcel']);
 
 //routing cari data siswa
 Route::get('/cari/siswa', [CariController::class, 'cari']);
+//routing cari data siswa
+Route::get('/cari/guru', [CariController::class, 'cariGuru']);
